@@ -18,6 +18,7 @@ header {
     color: white; /* Белый текст */
     text-align: center; /* Центрирование текста */
     padding: 20px; /* Отступы внутри */
+    position: fixed;
 }
 
 /* Стили для заголовка в шапке */
