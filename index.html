@@ -1,1 +1,72 @@
+<!DOCTYPE html> <!-- Объявляем тип документа как HTML5 -->
+<html lang="ru"> <!-- Открываем тег html и указываем язык (русский) -->
+<head>
+    <meta charset="UTF-8"> <!-- Кодировка UTF-8 для поддержки кириллицы -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность для мобильных устройств -->
+    <title>Музыкальная школа "Гармония"</title> <!-- Заголовок страницы -->
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем файл стилей -->
+</head>
+<body>
+    <header> <!-- Шапка сайта -->
+        <h1>Музыкальная школа "Гармония"</h1> <!-- Главный заголовок -->
+        <nav> <!-- Навигационное меню -->
+            <ul> <!-- Список ссылок -->
+                <li><a href="#about">О нас</a></li> <!-- Ссылка на секцию "О нас" -->
+                <li><a href="#courses">Курсы</a></li> <!-- Ссылка на секцию "Курсы" -->
+                <li><a href="#contact">Контакты</a></li> <!-- Ссылка на секцию "Контакты" -->
+            </ul>
+        </nav>
+    </header>
 
+    <section id="about"> <!-- Секция "О нас" -->
+        <h2>Добро пожаловать!</h2> <!-- Подзаголовок -->
+        <p>Мы обучаем музыке с душой и вдохновением.</p> <!-- Текст о школе -->
+        <button class="interactive-btn">Узнать больше</button> <!-- Интерактивная кнопка 1 -->
+        <div class="popup hidden"> <!-- Всплывающее окно (скрыто по умолчанию) -->
+            <p>Наша школа открыта для всех возрастов!</p> <!-- Текст в попапе -->
+            <button class="close-btn">Закрыть</button> <!-- Кнопка закрытия -->
+        </div>
+    </section>
+
+    <section id="courses"> <!-- Секция "Курсы" -->
+        <h2>Наши курсы</h2> <!-- Подзаголовок -->
+        <div class="course-list"> <!-- Контейнер для курсов -->
+            <div class="course-card"> <!-- Карточка курса 1 -->
+                <h3>Фортепиано</h3> <!-- Название курса -->
+                <p>Освойте искусство игры на фортепиано.</p> <!-- Описание -->
+                <span class="play-audio">Слушать пример</span> <!-- Интерактивный элемент 2: аудио -->
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio> <!-- Аудиофайл -->
+            </div>
+            <div class="course-card"> <!-- Карточка курса 2 -->
+                <h3>Гитара</h3> <!-- Название курса -->
+                <p>Научитесь играть любимые мелодии.</p> <!-- Описание -->
+                <span class="play-audio">Слушать пример</span> <!-- Интерактивный элемент -->
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio> <!-- Аудиофайл -->
+            </div>
+        </div>
+    </section>
+
+    <section id="video"> <!-- Секция с видео -->
+        <h2>Видео о нас</h2> <!-- Подзаголовок -->
+        <video controls> <!-- Видео с элементами управления -->
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> <!-- Источник видео -->
+            Ваш браузер не поддерживает видео. <!-- Сообщение при ошибке -->
+        </video>
+    </section>
+
+    <section id="contact"> <!-- Секция "Контакты" -->
+        <h2>Свяжитесь с нами</h2> <!-- Подзаголовок -->
+        <form> <!-- Форма обратной связи -->
+            <input type="text" placeholder="Ваше имя" required> <!-- Поле ввода имени -->
+            <input type="email" placeholder="Ваш email" required> <!-- Поле ввода email -->
+            <button type="submit" class="submit-btn">Отправить</button> <!-- Интерактивная кнопка 3 -->
+        </form>
+    </section>
+
+    <footer> <!-- Футер -->
+        <p>© 2025 Музыкальная школа "Гармония"</p> <!-- Текст футера -->
+    </footer>
+
+    <script src="script.js"></script> <!-- Подключаем JavaScript для интерактивности -->
+</body>
+</html>
