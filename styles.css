@@ -34,7 +34,6 @@ h1 {
 
 /* Стили для навигации */
 nav ul {
-    animation: fadeIn 2s ease-in; /* Анимация появления заголовка */
     list-style: none; /* Убираем маркеры списка */
     display: flex; /* Располагаем горизонтально */
     justify-content: flex-end;
@@ -69,13 +68,19 @@ section {
     text-align: center; /* Центрирование текста */
 }
 
+
 /* Стили для подзаголовков */
 h2 {
     font-size: 28px; /* Размер шрифта */
     margin-top: 20px;
     margin-bottom: 20px; /* Отступ снизу */
 }
-
+h2::first-letter {
+    font-size: 36px; /* Увеличиваем размер первой буквы */
+    color: #f1c40f; /* Желтый цвет для выделения */
+    font-weight: bold; /* Делаем букву жирной */
+    line-height: 1; /* Выравниваем высоту строки для аккуратного вида */
+}
 /* Стили для кнопки "Узнать больше" */
 .interactive-btn {
     background-color: #f1c40f; /* Желтый фон */
