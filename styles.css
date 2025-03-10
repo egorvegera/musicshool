@@ -1,35 +1,33 @@
-/* Сброс стандартных стилей */
+
 * {
-    margin: 0; /* Убираем отступы */
-    padding: 0; /* Убираем внутренние отступы */
-    box-sizing: border-box; /* Учитываем padding и border в размерах */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Стили для тела страницы */
 body {
-    animation: fadeIn 2s ease-in; /* Анимация появления заголовка */
-    font-family: Arial, sans-serif; /* Шрифт по умолчанию */
-    line-height: 1.6; /* Высота строки */
-    color: #333; /* Цвет текста */
+    animation: fadeIn 2s ease-in;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 @keyframes fadeIn {
-    from { opacity: 0; } /* Начальное состояние: невидимо */
-    to { opacity: 1; } /* Конечное состояние: полностью видно */
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-/* Стили для шапки */
 header {
     margin-bottom: 40px;
-    background-color: #1a3c34; /* Темно-зеленый фон */
-    color: white; /* Белый текст */
-    text-align: center; /* Центрирование текста */
+    background-color: #1a3c34; 
+    color: white;
+    text-align: center;
     position: fixed;
     width: 100%;
 }
 
 /* Стили для заголовка в шапке */
 h1 {
-    font-size: 20px; /* Размер шрифта */
-    animation: fadeIn 2s ease-in; /* Анимация появления заголовка */
+    font-size: 20px;
+    animation: fadeIn 2s ease-in;
 }
 
 /* Стили для навигации */
@@ -42,7 +40,7 @@ nav ul {
 
 /* Стили для элементов списка навигации */
 .flex-item {
-    margin: 0 20px; /* Отступы слева и справа */
+    margin: 0 20px;
     
 }
 .fi1 {
@@ -53,99 +51,110 @@ nav ul {
 
 /* Стили для ссылок в навигации */
 nav ul li a {
-    color: white; /* Белый цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
+    color: white;
+    text-decoration: none;
 }
 
-/* Псевдокласс hover для ссылок */
+
 nav ul li a:hover {
-    color: #f1c40f; /* Желтый цвет при наведении */
+    color: #f1c40f;
 }
 
 /* Стили для секций */
 section {
-    padding: 40px; /* Отступы внутри секции */
-    text-align: center; /* Центрирование текста */
+    padding: 40px;
+    text-align: center;
 }
 
 
 /* Стили для подзаголовков */
 h2 {
-    font-size: 28px; /* Размер шрифта */
+    font-size: 28px;
     margin-top: 20px;
-    margin-bottom: 20px; /* Отступ снизу */
+    margin-bottom: 20px;
 }
+/* Псевдоэлемент */
 h2::first-letter {
-    font-size: 36px; /* Увеличиваем размер первой буквы */
-    color: #f1c40f; /* Желтый цвет для выделения */
-    font-weight: bold; /* Делаем букву жирной */
-    line-height: 1; /* Выравниваем высоту строки для аккуратного вида */
+    font-size: 36px;
+    color: #f1c40f;
+    font-weight: bold;
+    line-height: 1; 
 }
 /* Стили для кнопки "Узнать больше" */
 .interactive-btn {
-    background-color: #f1c40f; /* Желтый фон */
-    border: none; /* Убираем рамку */
-    padding: 10px 20px; /* Отступы внутри */
-    cursor: pointer; /* Курсор-указатель */
-    font-size: 16px; /* Размер шрифта */
-    transition: transform 0.3s; /* Анимация изменения размера */
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s;
 }
 
 /* Псевдокласс hover для кнопки */
 .interactive-btn:hover {
-    transform: scale(1.1); /* Увеличение кнопки при наведении */
+    transform: scale(1.1);
 }
 
 /* Стили для всплывающего окна */
 .popup {
-    position: fixed; /* Фиксированная позиция */
-    top: 50%; /* Центрирование по вертикали */
-    left: 50%; /* Центрирование по горизонтали */
-    transform: translate(-50%, -50%); /* Смещение для точного центрирования */
-    background-color: white; /* Белый фон */
-    padding: 20px; /* Отступы внутри */
-    border: 2px solid #1a3c34; /* Зеленая рамка */
-    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #1a3c34;
+    display: none;
 }
 
 /* Класс для показа попапа */
 .popup.show {
-    display: block; /* Показываем попап */
+    display: block;
 }
 
 /* Стили для кнопки закрытия */
 .close-btn {
-    background-color: #e74c3c; /* Красный фон */
-    color: white; /* Белый текст */
-    border: none; /* Убираем рамку */
-    padding: 5px 10px; /* Отступы внутри */
-    cursor: pointer; /* Курсор-указатель */
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 /* Стили для списка курсов */
 .course-list {
-    display: flex; /* Горизонтальное расположение карточек */
-    justify-content: center; /* Центрируем карточки */
-    gap: 20px; /* Расстояние между карточками */
-    flex-wrap: wrap; /* Перенос на новую строку при уменьшении экрана */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Стили для карточек курсов */
 .course-card {
-    background-color: #ecf0f1; /* Светло-серый фон */
-    padding: 20px; /* Отступы внутри */
-    width: 200px; /* Фиксированная ширина */
-    border-radius: 10px; /* Скругленные углы */
+    background-color: #ecf0f1;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    animation: SlideIn 1s ease-in;
+}
+@keyframes SlideIn {
+    from {
+        margin-left: 100%;
+        }
+        to {
+        margin-left: 0%;
+        }
 }
 .course-card:hover {
     transform: scale(1.1);
-    cursor: pointer; /* Курсор-указатель */
-    transition: transform 0.3s; /* Анимация изменения размера */
+    cursor: pointer;
+    transition: transform 0.3s;
 }
+
 /* Стили для текста "Слушать пример" */
 .play-audio {
-    color: #1a3c34; /* Зеленый цвет */
-    cursor: pointer; /* Курсор-указатель */
+    color: #1a3c34;
+    cursor: pointer;
 }
 
 /* Псевдоэлемент after для текста "Слушать пример" */
@@ -155,57 +164,56 @@ h2::first-letter {
 
 /* Скрываем аудиоэлемент */
 audio {
-    display: none; /* Скрываем стандартный плеер */
+    display: none;
 }
 
 /* Стили для видео */
 video {
-    max-width: 100%; /* Адаптивная ширина видео */
-    height: auto; /* Сохранение пропорций */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Стили для формы */
 form {
-    display: flex; /* Вертикальное расположение полей */
-    flex-direction: column; /* Столбец */
-    gap: 10px; /* Расстояние между элементами */
-    max-width: 300px; /* Ограничение ширины формы */
-    margin: 0 auto; /* Центрирование формы */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 /* Стили для полей ввода */
 input {
-    padding: 10px; /* Отступы внутри */
-    font-size: 16px; /* Размер шрифта */
+    padding: 10px;
+    font-size: 16px;
 }
 
 /* Псевдокласс focus для полей ввода */
 input:focus {
-    outline: none; /* Убираем стандартную обводку */
-    border: 2px solid #f1c40f; /* Желтая рамка при фокусе */
+    outline: none;
+    border: 2px solid #f1c40f;
 }
 
 /* Стили для кнопки отправки */
 .submit-btn {
-    background-color: #1a3c34; /* Зеленый фон */
-    color: white; /* Белый текст */
-    padding: 10px; /* Отступы внутри */
-    border: none; /* Убираем рамку */
-    cursor: pointer; /* Курсор-указатель */
+    background-color: #1a3c34;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 /* Стили для футера */
 footer {
-    background-color: #1a3c34; /* Зеленый фон */
-    color: white; /* Белый текст */
-    text-align: center; /* Центрирование текста */
-    padding: 10px; /* Отступы внутри */
+    background-color: #1a3c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Адаптивность для экранов меньше 768px */
 @media (max-width: 768px) {
-    h1 { font-size: 28px; } /* Уменьшаем заголовок */
-    nav ul { flex-direction: column; } /* Навигация в столбец */
-    nav ul li { margin: 10px 0; } /* Отступы для пунктов меню */
-    .course-card { width: 100%; } /* Карточки на всю ширину */
+    nav ul { flex-direction: column; }
+    nav ul li { margin: 10px 0; }
+    .course-card { width: 100%; }
 }
