@@ -7,43 +7,49 @@
 
 /* Стили для тела страницы */
 body {
+    animation: fadeIn 2s ease-in; /* Анимация появления заголовка */
     font-family: Arial, sans-serif; /* Шрифт по умолчанию */
     line-height: 1.6; /* Высота строки */
     color: #333; /* Цвет текста */
 }
-
-/* Стили для шапки */
-header {
-    background-color: #1a3c34; /* Темно-зеленый фон */
-    color: white; /* Белый текст */
-    text-align: center; /* Центрирование текста */
-    padding: 20px; /* Отступы внутри */
-    position: fixed;
-}
-
-/* Стили для заголовка в шапке */
-h1 {
-    font-size: 36px; /* Размер шрифта */
-    animation: fadeIn 2s ease-in; /* Анимация появления заголовка */
-}
-
-/* Анимация для заголовка */
 @keyframes fadeIn {
     from { opacity: 0; } /* Начальное состояние: невидимо */
     to { opacity: 1; } /* Конечное состояние: полностью видно */
 }
+/* Стили для шапки */
+header {
+    margin-bottom: 40px;
+    background-color: #1a3c34; /* Темно-зеленый фон */
+    color: white; /* Белый текст */
+    text-align: center; /* Центрирование текста */
+    position: fixed;
+    width: 100%;
+}
+
+/* Стили для заголовка в шапке */
+h1 {
+    font-size: 20px; /* Размер шрифта */
+    animation: fadeIn 2s ease-in; /* Анимация появления заголовка */
+}
 
 /* Стили для навигации */
 nav ul {
+    animation: fadeIn 2s ease-in; /* Анимация появления заголовка */
     list-style: none; /* Убираем маркеры списка */
     display: flex; /* Располагаем горизонтально */
-    justify-content: center; /* Центрируем */
-    margin-top: 10px; /* Отступ сверху */
+    justify-content: flex-end;
 }
 
+
 /* Стили для элементов списка навигации */
-nav ul li {
+.flex-item {
     margin: 0 20px; /* Отступы слева и справа */
+    
+}
+.fi1 {
+    flex-grow: 8;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 /* Стили для ссылок в навигации */
@@ -66,6 +72,7 @@ section {
 /* Стили для подзаголовков */
 h2 {
     font-size: 28px; /* Размер шрифта */
+    margin-top: 20px;
     margin-bottom: 20px; /* Отступ снизу */
 }
 
@@ -125,7 +132,11 @@ h2 {
     width: 200px; /* Фиксированная ширина */
     border-radius: 10px; /* Скругленные углы */
 }
-
+.course-card:hover {
+    transform: scale(1.1);
+    cursor: pointer; /* Курсор-указатель */
+    transition: transform 0.3s; /* Анимация изменения размера */
+}
 /* Стили для текста "Слушать пример" */
 .play-audio {
     color: #1a3c34; /* Зеленый цвет */

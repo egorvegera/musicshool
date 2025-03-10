@@ -14,6 +14,12 @@ closeBtn.addEventListener('click', () => {
     popup.classList.remove('show'); // Скрываем попап
 });
 
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && popup.classList.contains('show')) { // Проверяем, что нажата Escape и попап открыт
+        popup.classList.remove('show'); // Скрываем попап
+    }
+});
+
 // Обработчик для аудио
 audioTriggers.forEach(trigger => {
     const audio = trigger.nextElementSibling; // Находим соответствующий аудиоэлемент
